@@ -1,0 +1,28 @@
+package mip;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Seleniumlogin {
+
+	public static void main(String[] args) throws InterruptedException {
+
+	System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+	WebDriver driver = new FirefoxDriver();
+		
+	driver.get("https://www.gmail.com");
+	
+	Thread.sleep(5000);
+	
+	
+	driver.findElement(By.xpath("//input[@id ='identifierId'] ")).sendKeys("9092292280");
+	
+	Thread.sleep(5000);
+
+	driver.findElement(By.xpath("//span[. = 'Next']")).click();	
+
+	//driver.close();
+	}
+
+}

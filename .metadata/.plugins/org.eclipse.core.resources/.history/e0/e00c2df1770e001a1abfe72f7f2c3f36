@@ -1,0 +1,12 @@
+package mip;
+
+public class frames {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+
+	}
+
+}

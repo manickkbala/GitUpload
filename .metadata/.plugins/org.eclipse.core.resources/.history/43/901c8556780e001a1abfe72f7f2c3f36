@@ -1,0 +1,19 @@
+package mip;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class frames {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.findElement(By.id("t1")).sendKeys("text value one");
+		
+	}
+
+}

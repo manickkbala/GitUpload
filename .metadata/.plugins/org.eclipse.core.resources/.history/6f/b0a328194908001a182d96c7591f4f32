@@ -1,0 +1,30 @@
+package mip;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class webelements {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://www.google.com/");
+		Thread.sleep(9000);
+		
+		WebElement ele = driver.findElement(By.xpath("//div[@id = 'SIvCob']"));
+		
+		String or = ele.getText();
+		
+		System.out.println(or);
+		
+		String pr = ele.getCssValue("font-size");
+	
+		System.out.println(pr);
+		
+		Thread.sleep(3000);
+		driver.close();
+	}
+}

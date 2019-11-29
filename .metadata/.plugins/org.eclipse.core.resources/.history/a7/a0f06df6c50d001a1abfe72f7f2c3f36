@@ -1,0 +1,29 @@
+package mip;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class dropdown {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		System.setProperty ("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+
+		WebDriver driver = new FirefoxDriver();
+		driver.get("file:///Users/bala/Desktop/dropdowns.html");
+		
+		WebElement ele = driver.findElement(By.id("mtr"));
+		
+		Select s = new Select(ele);
+		s.selectByIndex(1);
+		
+		Thread.sleep(2000);
+		
+		driver.close();
+	}
+
+}

@@ -1,0 +1,31 @@
+package mip;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class october20 {
+	public static void main(String[] args) throws Exception
+	{
+
+		System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://www.youtube.com/");
+		Thread.sleep(9000);
+		
+		//driver.findElement(By.id("search")).click();
+		
+		driver.findElement(By.xpath("//input[@id = 'search']")).sendKeys("kgf trailer");
+		driver.findElement(By.xpath("//yt-icon[@class = 'style-scope ytd-searchbox']")).click();
+
+		
+		Thread.sleep(9000);
+		
+		driver.findElement(By.xpath("//a[contains(.,'KGF Trailer Hindi ')]")).click();
+
+		//driver.close();
+	}
+	
+ 
+}
+	

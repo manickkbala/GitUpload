@@ -1,0 +1,41 @@
+package mip;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Training {
+	static
+	{
+		System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+
+		//System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("file:///Users/bala/Desktop/training.html");
+		
+		//To get the current url
+		String url = driver.getCurrentUrl();
+		System.out.println("The current url is  :" +url);
+		
+		//To get the current page title:
+		String title = driver.getTitle();
+		System.out.println("The current title is : " + title);
+		
+		//To get the current page source is:
+		//String ps = driver.getPageSource();
+		//System.out.println("The current page source is : " + ps);
+
+		driver.findElement(By.tagName("input"));
+		 //driver.findElement(By.id("abc")).;
+		
+		Thread.sleep(5000);
+		
+		driver.close();
+	}
+
+}

@@ -1,0 +1,28 @@
+package mip;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class findelements {
+	public static void main(String[] args) throws InterruptedException
+	{
+		System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.get("file:///Users/bala/Desktop/findemements.html");
+		
+		 List<WebElement> ele = driver.findElements(By.tagName("input"));
+		int count = ele.size();
+		System.out.println(count);
+		
+		Thread.sleep(2000);
+		
+		driver.close();
+	}
+
+
+}

@@ -1,0 +1,18 @@
+package mip;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Seleniumlogin {
+
+	public static void main(String[] args) {
+
+	System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+	WebDriver driver = new FirefoxDriver();
+		
+	driver.get("https://www.google.com");
+	
+	
+	}
+
+}

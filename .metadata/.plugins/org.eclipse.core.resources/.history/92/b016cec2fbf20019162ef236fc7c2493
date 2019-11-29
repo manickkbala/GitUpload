@@ -1,0 +1,20 @@
+package mip;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class october20 {
+	public static void main(String[] args) throws Exception
+	{
+
+		System.setProperty("webdriver.gecko.driver", "/Users/bala/Desktop/Insurance/mip/mip_libraries/geckodriver");
+		WebDriver driver = new FirefoxDriver();
+		driver.get("file:///Users/bala/Desktop/html.html");
+		Thread.sleep(3000);
+		driver.close();
+		driver.findElement(By.id=("a1")).click();
+	}
+	
+
+}
