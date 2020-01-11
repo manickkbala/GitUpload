@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-12-29T13:54:04 IST" name="Default suite" finished-at="2019-12-29T13:54:33 IST" duration-ms="28769">
+    <groups>
+    </groups>
+    <test started-at="2019-12-29T13:54:04 IST" name="Default test" finished-at="2019-12-29T13:54:33 IST" duration-ms="28769">
+      <class name="TestScripts.FoodrxLogin">
+        <test-method is-config="true" signature="mydrivers()[pri:0, instance:TestScripts.FoodrxLogin@17c386de]" started-at="2019-12-29T13:54:04 IST" name="mydrivers" finished-at="2019-12-29T13:54:12 IST" duration-ms="7910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mydrivers -->
+        <test-method signature="login()[pri:0, instance:TestScripts.FoodrxLogin@17c386de]" started-at="2019-12-29T13:54:12 IST" name="login" finished-at="2019-12-29T13:54:33 IST" duration-ms="20834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- TestScripts.FoodrxLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

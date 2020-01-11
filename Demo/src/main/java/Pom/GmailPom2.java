@@ -1,0 +1,35 @@
+package Pom;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class GmailPom2 {
+
+	//Declaration
+
+	@FindBy(xpath = "//input[@name=\"password\"]")
+	private WebElement pwdbox;
+	
+	@FindBy(xpath = "//span[. = 'Next']")
+	private WebElement pnext;
+	
+	
+	//initialization
+		public GmailPom2 (WebDriver driver)
+		{
+			PageFactory.initElements(driver, this);
+		}
+
+	
+	//Utilization
+		public void setpwd(String unmae)
+		{
+			pwdbox.sendKeys(unmae);
+		}
+		public void pwnxtbtn()
+		{
+			pnext.click();
+		}
+}
